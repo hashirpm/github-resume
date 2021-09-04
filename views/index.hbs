@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div>
+
+  <label for="">Username</label>
+  <input type="text" name="Name" id="username" class="form-control" />
+
+  <a
+    href=""
+    onclick="this.href='/generate/' + document.getElementById('username').value"
+  >Generate</a>
+
+</div>
