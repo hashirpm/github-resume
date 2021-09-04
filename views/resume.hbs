@@ -1,3 +1,79 @@
 <div>
-    <h1>Resume</h1>
+  <div id="" class="">
+
+    <header>
+      <div class="">
+        <div class="">
+          <h1 class="">{{user.name}}</h1>
+
+        </div>
+
+        <div class="">
+          <div class="">
+            {{#if user.avatar_url}}
+              <img src={{user.avatar_url}} alt="avatar" class="" />
+            {{/if}}
+            {{#if user.email}}
+              <h3><a
+                  href="mailto:{{email}}"
+                  class="email"
+                >{{user.email}}</a></h3>
+            {{/if}}
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
+    <article>
+      <div id="">
+        <div class="">
+
+          <div id="" class="">
+            <div class="">
+              <h2>Profile</h2>
+            </div>
+            <div class="">
+              <p class="">
+                GitHub user since
+                {{user.since}},
+                {{user.name}}
+                is a developer
+                {{user.location}}
+                based in
+                <span class="">{{user.location}}</span>
+
+                with
+                <a
+                  href="https://github.com/{{{user.username}}}?tab=repositories"
+                >{{user.repos}}
+                  public
+                  {{user.reposLabel}}</a>&nbsp;and
+                <a
+                  href="https://github.com/{{{user.username}}}/followers"
+                >{{user.followers}}
+                  {{user.followersLabel}}</a>.
+              </p>
+            </div>
+          </div>
+          <!--// .yui-gf -->
+          {{#if user.website}}
+            <div class="" id="">
+              <div class="">
+                <h2>Website</h2>
+              </div>
+              <div class="" id="">
+                <a
+                  href="{{user.website}}"
+                  id="website"
+                  title="{{user.name}}'s website"
+                >{{user.website}}</a>
+              </div>
+            </div>
+          {{/if}}
+        </div>
+      </div>
+    </article>
+  </div>
 </div>
