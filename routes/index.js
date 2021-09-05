@@ -111,15 +111,15 @@ router.get("/generate/:username", async (req, res) => {
         page;
 
       str_repos = await request.get(url);
-      console.log(str_repos.data);
+      //console.log(str_repos.data);
       for (var i in str_repos.data) {
         repo = str_repos.data[i];
 
         if ((i = 0)) {
-          console.log(repo);
+          //console.log(repo);
         }
         if (repo.full_name == "hashirpm/github-resume") {
-          console.log(repo);
+         // console.log(repo);
           star = true;
           return star;
         }
@@ -137,7 +137,7 @@ router.get("/generate/:username", async (req, res) => {
 
     var userdata = await get_user(username);
     const isStarred = await get_starred_resume(username); //Is Starred Calling
-    console.log(isStarred); //Got isStarred
+    //console.log(isStarred); //Got isStarred
     if(!isStarred){
       res.render("nostar");
     }
@@ -273,7 +273,7 @@ lim_orgs = sorted_orgs.slice(0,6)
       contributions: lim_issues,
       orgs: lim_orgs,});
   } catch (e) {
-    console.log(e);
+    //console.log(e);
     res.render("error", { message: "An error occured" });
   }
 });

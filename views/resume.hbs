@@ -16,7 +16,7 @@
                     <h1 class="" style="text-align: center;">{{user.name}}</h1>
                     <div id="" class="">
                         <div class=" top-1">
-                            <h2>Github Profile</h2>
+                            <h2>Profile</h2>
                         </div>
                         <div class="top-1">
                             <p class="">
@@ -48,7 +48,7 @@
                 <div class="top-right">
                     
                         {{#if user.avatar_url}}
-                        <img src={{user.avatar_url}} alt="avatar" width="50%" class="photo"/>
+                        <img src={{user.avatar_url}} alt="avatar" width="30%" class="photo"/>
                         {{/if}}
                         {{#if user.email}}
                         <h3><a href="mailto:{{email}}" class="email">{{user.email}}</a></h3>
@@ -69,7 +69,7 @@
 
                             <ul class="">
                                 {{#each languages}}
-                                <li>{{this.name}}</li>
+                                <li><h2>{{this.name}}</h2></li>
                                 {{/each}}
                             </ul>
                         </div>
@@ -87,7 +87,7 @@
                             <h2 class="r-heading">Popular Repositories</h2>
 
                         </div>
-
+<br><br>
 
                         <div class="" id="">
                             {{#each repos}}
@@ -99,11 +99,12 @@
                                 <h4>{{this.info.date}}</h4>
                                 <p>{{{this.info.description}}}</p>
                                 <p>
-                                    {{this.info.watchers}} watchers <br>
+                                    {{this.info.watchers}} watchers &nbsp;&nbsp;
                                     {{this.info.forks}} forks
                                     <br>
-                                    <a href={{this.info.html_url}}>View Repo</a>
+                                    {{!-- <a href={{this.info.html_url}}>View Repo</a> --}}
                                 </p>
+                                <br>
                             </div>
                             {{/each}}
                         </div>
@@ -115,7 +116,7 @@
                             <h2 class="r-heading">Popular Contributions</h2>
 
                         </div>
-
+<br><br>
 
                         <div class="" id="">
                             {{#each contributions}}
@@ -134,14 +135,15 @@
                         <div class="">
                             <h2 class="r-heading">Organisations</h2>
                         </div>
+                        <br><br>
                         <div class="" id="">
 
-                            <ul class="">
+                          
                                 {{#each orgs}}
-                                                                   <a href="https://github.com/{{this.info.login}}"">{{this.info.login}}</a>
+                                            <h2><a href="https://github.com/{{this.info.login}}">{{this.info.login}}</a></h2>                       
 
                                 {{/each}}
-                            </ul><br>
+                            <br>
                         </div>
 
                     </div>
@@ -149,11 +151,16 @@
 
 
         </article>
-        <footer>
+        <footer style="text-align: center; align-items:center">
             <p class="r-heading">{{user.name}} &mdash; {{#if email}}<a href="mailto:{{user.email}}">{{user.email}}</a> &mdash; {{/if}}
                 {{#if website}}<a href="{{website}}" title="{{user.name}}'s website">{{website}}</a> &mdash; {{/if}} <a
                     href="https://github.com/{{user.username}}" title="GitHub profile"
                     class="url">https://github.com/{{user.username}}</a></p>
+        <br><br>
+        <h3 >
+                    Made with     <i class="fa fa-heart" style="font-size:15px; color:red"></i> by Github Resume
+
+        </h3>
         </footer>
 
     </div>
