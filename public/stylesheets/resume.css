@@ -66,25 +66,34 @@ body{
 .top-1{
     margin-top: 3%;
 }
+.top-2{
+    float: left;
+    width: 100%;
+    margin-top: 3%;
+}
 .r-repo{
-    
+    margin-top: 3%;
     float: left;
 }
 
 .r-contributions{
     float: left;
-    padding-right: 8%;
-    margin-left: 5%;
+    width: 100%;
+    margin-top: 3%;
+    padding-right: 8%
 }
 
 .r-organisation{
-    margin-left: 5%;
+    margin-top: 3%;
+    width: 100%;
     margin-top: 3%;
     float: left;
 }
 
 footer{
-    margin-left: 5%;
+    
+    width: 100%;
     margin-top: 3%;
     float: left;
+    padding-bottom: 10%;
 }
