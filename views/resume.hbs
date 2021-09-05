@@ -1,11 +1,11 @@
 <div id="" class="r-container">
     <div class="r-navbar">
-        <img src="/Images/git title.png" class="r-logo">
-
+        <div class="r-navbar-1"><img src="/Images/git title.png" class="r-logo"></div>
+        <div class="r-navbar-2">
         <a href="/"><button class="r-btn" >Go to Homepage</button></a>
         &nbsp;&nbsp;
-            <button onclick="printDiv('content')" class="r-btn" >Print</button>
-
+        <button onclick="printDiv('content')" class="r-btn" >Print</button>
+        </div>
 
     </div>
     <div id="content" class="r-main">
@@ -63,7 +63,7 @@
                     {{#if languages}}
                     <div class="top-2" id="">
                         <div class="">
-                            <h2>Languages</h2>
+                            <h2 class="r-heading">Languages</h2>
                         </div>
                         <div class="top-1" id="">
 
@@ -84,7 +84,7 @@
                     {{#if repos}}
                     <div id="" class="r-repo">
                         <div class="">
-                            <h2>Popular Repositories</h2>
+                            <h2 class="r-heading">Popular Repositories</h2>
 
                         </div>
 
@@ -112,7 +112,7 @@
                     {{#if contributions}}
                     <div id="" class="r-contributions">
                         <div class="">
-                            <h2>Popular Contributions</h2>
+                            <h2 class="r-heading">Popular Contributions</h2>
 
                         </div>
 
@@ -132,7 +132,7 @@
                            {{#if orgs}}
                     <div class="r-organisation" id="">
                         <div class="">
-                            <h2>Organisations</h2>
+                            <h2 class="r-heading">Organisations</h2>
                         </div>
                         <div class="" id="">
 
@@ -141,7 +141,7 @@
                                                                    <a href="https://github.com/{{this.info.login}}"">{{this.info.login}}</a>
 
                                 {{/each}}
-                            </ul>
+                            </ul><br>
                         </div>
 
                     </div>
@@ -150,7 +150,7 @@
 
         </article>
         <footer>
-            <p>{{user.name}} &mdash; {{#if email}}<a href="mailto:{{user.email}}">{{user.email}}</a> &mdash; {{/if}}
+            <p class="r-heading">{{user.name}} &mdash; {{#if email}}<a href="mailto:{{user.email}}">{{user.email}}</a> &mdash; {{/if}}
                 {{#if website}}<a href="{{website}}" title="{{user.name}}'s website">{{website}}</a> &mdash; {{/if}} <a
                     href="https://github.com/{{user.username}}" title="GitHub profile"
                     class="url">https://github.com/{{user.username}}</a></p>
