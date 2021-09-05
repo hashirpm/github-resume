@@ -1,9 +1,11 @@
 <div id="" class="r-container">
     <div class="r-navbar">
         <img src="/Images/git title.png" class="r-logo">
+
         <a href="/"><button class="r-btn" >Go to Homepage</button></a>
         &nbsp;&nbsp;
             <button onclick="printDiv('content')" class="r-btn" >Print</button>
+
 
     </div>
     <div id="content" class="r-main">
@@ -39,22 +41,7 @@
                             <a href="{{user.website}}" id="website" title="{{user.name}}'s website">{{user.website}}</a>
                         </div>
                     </div>
-                    {{/if}}
-                    {{#if languages}}
-                    <div class="top-1" id="">
-                        <div class="top-1">
-                            <h2>Languages</h2>
-                        </div>
-                        <div class="top-1" id="">
-
-                            <ul class="">
-                                {{#each languages}}
-                                <li>{{this.name}}</li>
-                                {{/each}}
-                            </ul>
-                        </div>
-
-                    </div>
+                    
                   
                 </div>
 
@@ -72,7 +59,22 @@
             </div>
 
         </header>
+        {{/if}}
+                    {{#if languages}}
+                    <div class="top-2" id="">
+                        <div class="">
+                            <h2>Languages</h2>
+                        </div>
+                        <div class="top-1" id="">
 
+                            <ul class="">
+                                {{#each languages}}
+                                <li>{{this.name}}</li>
+                                {{/each}}
+                            </ul>
+                        </div>
+
+                    </div>
         <article>
             <div id="">
                 <div class="">
@@ -108,7 +110,7 @@
                     </div>
                     {{/if}}
                     {{#if contributions}}
-                    <div id="" class="">
+                    <div id="" class="r-contributions">
                         <div class="">
                             <h2>Popular Contributions</h2>
 
@@ -128,7 +130,7 @@
                     </div>
                     {{/if}}
                            {{#if orgs}}
-                    <div class="" id="">
+                    <div class="r-organisation" id="">
                         <div class="">
                             <h2>Organisations</h2>
                         </div>
@@ -136,7 +138,7 @@
 
                             <ul class="">
                                 {{#each orgs}}
-                                                                   <a href="https://github.com/{{this.info.login}}">{{this.info.login}}</a>
+                                                                   <a href="https://github.com/{{this.info.login}}"">{{this.info.login}}</a>
 
                                 {{/each}}
                             </ul>
