@@ -51,7 +51,7 @@ git clone https://github.com/[replace-with-your-github-username]/github-resume.g
 ```
 npm run start
 ```
-6. After that, the command will start a local server instance. Open (http://localhost:5000/) in your browser. The **GiHub Resume** will be displayed.
+6. After that, the command will start a local server instance. Open (http://localhost:5000/) in your browser. The **GitHub Resume** will be displayed.
 
 ## 🖋 Contribute
 	
