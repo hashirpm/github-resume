@@ -27,8 +27,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(#0C0E10, #446182);
+  {{!-- background: linear-gradient(#0C0E10, #446182); --}}
 }
 .background .ground {
   position: absolute;
@@ -46,7 +45,7 @@ body {
 .container {
   position: relative;
   margin: 0 auto;
-  width: 85%;
+  width: 100%;
   height: 100vh;
   padding-bottom: 25vh;
   display: flex;
@@ -190,9 +189,11 @@ a:link {
 <div class="container">
 	<div class="left-section">
 		<div class="inner-content">
-			<h1 class="heading">404</h1>
-			<p class="subheading">Oops! Looks like an error occured. <br>Please Try Again.</p>
-            <p class="subheading" style="margin-top: 1%;"><a href="/"><i>Go to homepage</i></a></p>
+			<h1 class="heading">Not Starred</h1>
+			<p class="subheading">Oops! Looks like the username has not starred our repository.<br>Please try again after starring the repo.</p>
+
+            <p class="subheading" style="margin-top: 1%;"><a href="https://github.com/hashirpm/github-resume"><i>Visit Repository</i></a></p>
+
 		</div>
 	</div>
 	<div class="right-section">

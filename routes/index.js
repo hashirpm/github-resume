@@ -139,7 +139,7 @@ router.get("/generate/:username", async (req, res) => {
     const isStarred = await get_starred_resume(username); //Is Starred Calling
     console.log(isStarred); //Got isStarred
     if(!isStarred){
-      res.render("error", { message: "User not starred repo" });
+      res.render("nostar");
     }
     data = userdata.data;
 
