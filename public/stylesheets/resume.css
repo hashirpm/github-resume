@@ -70,3 +70,21 @@ body{
     
     float: left;
 }
+
+.r-contributions{
+    float: left;
+    padding-right: 8%;
+    margin-left: 5%;
+}
+
+.r-organisation{
+    margin-left: 5%;
+    margin-top: 3%;
+    float: left;
+}
+
+footer{
+    margin-left: 5%;
+    margin-top: 3%;
+    float: left;
+}
