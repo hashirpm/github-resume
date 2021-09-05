@@ -1,39 +1,19 @@
-<div id="content" class="">
-
-
-    <div id="" class="">
+<div id="" class="r-container">
+    <div class="r-navbar">
+        <img src="/Images/git title.png" class="r-logo">
+        <button class="r-btn">Go to Homepage</button>
+    </div>
+    <div id="" class="r-main">
 
         <header>
             <div class="">
-                <div class="">
-                    <h1 class="">{{user.name}}</h1>
-                  
-                </div>
-
-                <div class="">
-                    <div class="">
-                        {{#if user.avatar_url}}
-                        <img src={{user.avatar_url}} alt="avatar" class="photo"/>
-                        {{/if}}
-                        {{#if user.email}}
-                        <h3><a href="mailto:{{email}}" class="email">{{user.email}}</a></h3>
-                        {{/if}}
-                    </div>
-
-                </div>
-            </div>
-
-        </header>
-
-        <article>
-            <div id="">
-                <div class="">
-
+                <div class="top-left">
+                    <h1 class="" style="text-align: center;">{{user.name}}</h1>
                     <div id="" class="">
-                        <div class="">
-                            <h2>Profile</h2>
+                        <div class=" top-1">
+                            <h2>Github Profile</h2>
                         </div>
-                        <div class="">
+                        <div class="top-1">
                             <p class="">
                                 GitHub user since {{user.since}}, {{user.name}} is a developer
                                 {{user.location}}
@@ -48,21 +28,21 @@
                     </div>
                     <!--// .yui-gf -->
                     {{#if user.website}}
-                    <div class="" id="">
-                        <div class="">
+                    <div class="top-1" id="">
+                        <div class="top-1">
                             <h2>Website</h2>
                         </div>
-                        <div class="" id="">
+                        <div class="top-1" id="">
                             <a href="{{user.website}}" id="website" title="{{user.name}}'s website">{{user.website}}</a>
                         </div>
                     </div>
                     {{/if}}
                     {{#if languages}}
-                    <div class="" id="">
-                        <div class="">
+                    <div class="top-1" id="">
+                        <div class="top-1">
                             <h2>Languages</h2>
                         </div>
-                        <div class="" id="">
+                        <div class="top-1" id="">
 
                             <ul class="">
                                 {{#each languages}}
@@ -72,9 +52,32 @@
                         </div>
 
                     </div>
+                  
+                </div>
+
+                <div class="top-right">
+                    
+                        {{#if user.avatar_url}}
+                        <img src={{user.avatar_url}} alt="avatar" width="95%" class="photo"/>
+                        {{/if}}
+                        {{#if user.email}}
+                        <h3><a href="mailto:{{email}}" class="email">{{user.email}}</a></h3>
+                        {{/if}}
+                    
+
+                </div>
+            </div>
+
+        </header>
+
+        <article>
+            <div id="">
+                <div class="">
+
+                    
                     {{/if}}
                     {{#if repos}}
-                    <div id="" class="">
+                    <div id="" class="r-repo">
                         <div class="">
                             <h2>Popular Repositories</h2>
 
@@ -130,7 +133,7 @@
 
                             <ul class="">
                                 {{#each orgs}}
-                                                                   <a href="https://github.com/{{this.info.login}}">{{this.info.login}}</a>
+                                                                   <a href="https://github.com/{{this.info.login}}"">{{this.info.login}}</a>
 
                                 {{/each}}
                             </ul>
