@@ -26,6 +26,13 @@ body{
     display: flex;
     align-items: center;
 }
+.r-navbar-1{
+    float:left;
+}
+.r-navbar-2{
+    float:right;
+    margin-left: 55%;
+}
 .r-logo{
     width: 150px;
     margin: 30px 0;
@@ -39,7 +46,7 @@ body{
       font-size: 14px;
       border-radius: 40px;
       background: white;
-      margin-left: 70%;
+      
       cursor: pointer;
   }
   
@@ -96,4 +103,8 @@ footer{
     margin-top: 3%;
     float: left;
     padding-bottom: 10%;
+}
+
+.r-heading{
+    font-size: 27px;
 }
