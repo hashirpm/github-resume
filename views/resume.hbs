@@ -1,79 +1,153 @@
-<div>
-  <div id="" class="">
+<div id="content" class="">
 
-    <header>
-      <div class="">
-        <div class="">
-          <h1 class="">{{user.name}}</h1>
 
-        </div>
+    <div id="" class="">
 
-        <div class="">
-          <div class="">
-            {{#if user.avatar_url}}
-              <img src={{user.avatar_url}} alt="avatar" class="" />
-            {{/if}}
-            {{#if user.email}}
-              <h3><a
-                  href="mailto:{{email}}"
-                  class="email"
-                >{{user.email}}</a></h3>
-            {{/if}}
-          </div>
-
-        </div>
-      </div>
-
-    </header>
-
-    <article>
-      <div id="">
-        <div class="">
-
-          <div id="" class="">
+        <header>
             <div class="">
-              <h2>Profile</h2>
-            </div>
-            <div class="">
-              <p class="">
-                GitHub user since
-                {{user.since}},
-                {{user.name}}
-                is a developer
-                {{user.location}}
-                based in
-                <span class="">{{user.location}}</span>
+                <div class="">
+                    <h1 class="">{{user.name}}</h1>
+                  
+                </div>
 
-                with
-                <a
-                  href="https://github.com/{{{user.username}}}?tab=repositories"
-                >{{user.repos}}
-                  public
-                  {{user.reposLabel}}</a>&nbsp;and
-                <a
-                  href="https://github.com/{{{user.username}}}/followers"
-                >{{user.followers}}
-                  {{user.followersLabel}}</a>.
-              </p>
+                <div class="">
+                    <div class="">
+                        {{#if user.avatar_url}}
+                        <img src={{user.avatar_url}} alt="avatar" class="photo"/>
+                        {{/if}}
+                        {{#if user.email}}
+                        <h3><a href="mailto:{{email}}" class="email">{{user.email}}</a></h3>
+                        {{/if}}
+                    </div>
+
+                </div>
             </div>
-          </div>
-          <!--// .yui-gf -->
-          {{#if user.website}}
-            <div class="" id="">
-              <div class="">
-                <h2>Website</h2>
-              </div>
-              <div class="" id="">
-                <a
-                  href="{{user.website}}"
-                  id="website"
-                  title="{{user.name}}'s website"
-                >{{user.website}}</a>
-              </div>
-            </div>
-          {{/if}}
-        </div>
-      </div>
-    </article>
-  </div>
+
+        </header>
+
+        <article>
+            <div id="">
+                <div class="">
+
+                    <div id="" class="">
+                        <div class="">
+                            <h2>Profile</h2>
+                        </div>
+                        <div class="">
+                            <p class="">
+                                GitHub user since {{user.since}}, {{user.name}} is a developer
+                                {{user.location}}
+                                based in <span class="">{{user.location}}</span>
+
+                                with <a href="https://github.com/{{{user.username}}}?tab=repositories">{{user.repos}}
+                                    public {{user.reposLabel}}</a>&nbsp;and <a
+                                    href="https://github.com/{{{user.username}}}/followers">{{user.followers}}
+                                    {{user.followersLabel}}</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <!--// .yui-gf -->
+                    {{#if user.website}}
+                    <div class="" id="">
+                        <div class="">
+                            <h2>Website</h2>
+                        </div>
+                        <div class="" id="">
+                            <a href="{{user.website}}" id="website" title="{{user.name}}'s website">{{user.website}}</a>
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{#if languages}}
+                    <div class="" id="">
+                        <div class="">
+                            <h2>Languages</h2>
+                        </div>
+                        <div class="" id="">
+
+                            <ul class="">
+                                {{#each languages}}
+                                <li>{{this.name}}</li>
+                                {{/each}}
+                            </ul>
+                        </div>
+
+                    </div>
+                    {{/if}}
+                    {{#if repos}}
+                    <div id="" class="">
+                        <div class="">
+                            <h2>Popular Repositories</h2>
+
+                        </div>
+
+
+                        <div class="" id="">
+                            {{#each repos}}
+                            <div class="">
+                                <h2>
+                                    <a href={{this.info.html_url}}>{{this.info.name}}</a> - {{this.since}}
+                                </h2>
+                                <h3>{{this.info.language}}</h3>
+                                <h4>{{this.info.date}}</h4>
+                                <p>{{{this.info.description}}}</p>
+                                <p>
+                                    {{this.info.watchers}} watchers <br>
+                                    {{this.info.forks}} forks
+                                    <br>
+                                    <a href={{this.info.html_url}}>View Repo</a>
+                                </p>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{#if contributions}}
+                    <div id="" class="">
+                        <div class="">
+                            <h2>Popular Contributions</h2>
+
+                        </div>
+
+
+                        <div class="" id="">
+                            {{#each contributions}}
+                            <div class="">
+                                <h2>
+                                    <a href={{this.repo_url}}>{{this.repo_name}}</a>
+                                </h2>
+                             
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/if}}
+                           {{#if orgs}}
+                    <div class="" id="">
+                        <div class="">
+                            <h2>Organisations</h2>
+                        </div>
+                        <div class="" id="">
+
+                            <ul class="">
+                                {{#each orgs}}
+                                                                   <a href="https://github.com/{{this.info.login}}">{{this.info.login}}</a>
+
+                                {{/each}}
+                            </ul>
+                        </div>
+
+                    </div>
+                    {{/if}}
+
+
+        </article>
+        <footer>
+            <p>{{user.name}} &mdash; {{#if email}}<a href="mailto:{{user.email}}">{{user.email}}</a> &mdash; {{/if}}
+                {{#if website}}<a href="{{website}}" title="{{user.name}}'s website">{{website}}</a> &mdash; {{/if}} <a
+                    href="https://github.com/{{user.username}}" title="GitHub profile"
+                    class="url">https://github.com/{{user.username}}</a></p>
+        </footer>
+
+    </div>
+
 </div>
