@@ -192,8 +192,10 @@ a:link {
 		<div class="inner-content">
 			<h1 class="heading">404</h1>
 			<p class="subheading">Oops! Looks like an error occured. <br>Please Try Again.</p>
-            <p class="subheading" style="margin-top: 1%;"><a href="#"><i>Go to homepage</i></a></p>
-
+            <p class="subheading" style="margin-top: 1%;"><a href="/"><i>Go to homepage</i></a></p>
+{{#if message}}
+<p>{{message}}</p>
+{{/if}}
 		</div>
 	</div>
 	<div class="right-section">

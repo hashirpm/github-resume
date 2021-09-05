@@ -133,11 +133,14 @@ router.get("/generate/:username", async (req, res) => {
     };
 
     //------------CALL FUNCTIONS-------------
-    const isStarred = await get_starred_resume(username); //Is Starred Calling
-    console.log(isStarred); //Got isStarred
+
 
     var userdata = await get_user(username);
-
+    const isStarred = await get_starred_resume(username); //Is Starred Calling
+    console.log(isStarred); //Got isStarred
+    if(!isStarred){
+      res.render("error", { message: "User not starred repo" });
+    }
     data = userdata.data;
 
     var sinceDate = new Date(data.created_at);
@@ -260,13 +263,15 @@ router.get("/generate/:username", async (req, res) => {
     }
 
     //console.log(sorted_orgs);//Got all orgs
-
+lim_repos = sorted_repos.slice(0,6)
+lim_issues = sorted_issues.slice(0,6)
+lim_orgs = sorted_orgs.slice(0,6)
 
     //-------------RENDER-----------------
-    res.render("resume", { user: user_data ,      repos: sorted_repos,
+    res.render("resume", { user: user_data ,      repos: lim_repos,
       languages: languages,
-      contributions: sorted_issues,
-      orgs: sorted_orgs,});
+      contributions: lim_issues,
+      orgs: lim_orgs,});
   } catch (e) {
     console.log(e);
     res.render("error", { message: "An error occured" });
