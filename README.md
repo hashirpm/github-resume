@@ -14,7 +14,7 @@
 
 <h4 align="center">
 :anchor: Stand out of the crowd by showing a dazzling resume.
-  <br>:necktie: :briefcase: Build fast :rocket: and easy the Personal GitHub resume!
+  <br>:necktie: :briefcase: Build fast :rocket: and easy Personal GitHub resume!
 </h4>
 
 <div>
