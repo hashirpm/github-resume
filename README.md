@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  GiHub Resume📃
+  GitHub Resume📃
   <br>
 </h1>
 <div align="center">
