@@ -53,7 +53,11 @@ a {
   font-size: 4vh;
   display:none;
 }
-
+.note{
+  margin-left: 25px;
+    margin-right: 25px;
+    margin-top: -35px;
+}
 .btn{
   color: #1e1e26;
     border: 0;
@@ -181,6 +185,11 @@ a {
     width: 50%;
   }
   
+  .note{
+    font-size: 1.5em;
+    margin-bottom: -40px;
+  }
+
   .btn{
     width: 10vw;
     margin-top: 0;
