@@ -23,11 +23,14 @@ a {
   text-align: center;
   margin-top: 3%;
 }
+.logo-main{
+  width: 90%;
+}
 .motto{
   color: white;
   font-family: helvetica;
   font-style: italic;
-  font-size: 1.2em;
+  font-size: 1em;
   word-spacing: 1.5em;
   letter-spacing: 0.3em;
 }
@@ -48,17 +51,19 @@ a {
 .username{
   color: white;
   font-size: 4vh;
+  display:none;
 }
 
 .btn{
   color: #1e1e26;
     border: 0;
-    width: 10vw;
+    width: 25vw;
     height: 5vh;
     font-family: helvetica;
-    font-size: initial;
+    font-size: 1em;
     background: white;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .btn:hover{
@@ -69,16 +74,15 @@ a {
 }
 .form-control{
   margin-top: 2vh;
-  width: 30vw;
+  width: 60vw;
   border-radius: 1vh;
   height: 4vh;
-  font-size: 130%;
+  font-size: 1em;
   padding-left: 1%;
 }
 .form-control:focus{
   border: 0;
 }
-
 /* ---------------------------------------------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
@@ -169,3 +173,21 @@ a {
 }
 
 /* ---------------------------------------------------------------- */
+
+
+@media only screen and (min-width: 1000px) {
+
+  .logo-main{
+    width: 50%;
+  }
+  
+  .btn{
+    width: 10vw;
+    margin-top: 0;
+  }
+
+  .form-control{
+    width: 27vw;
+  }
+
+}
