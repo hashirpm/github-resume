@@ -7,13 +7,20 @@
         <button onclick="printDiv('content')" class="r-btn" >Print</button>
         </div>
 
-    </div>
+    </div> 
+    <h1 class="title-name" >{{user.name}}</h1>
     <div id="content" class="r-main">
 
         <header>
             <div class="">
                 <div class="top-left">
-                    <h1 class="" style="text-align: center;">{{user.name}}</h1>
+                    {{#if user.avatar_url}}
+                        <img src={{user.avatar_url}} alt="avatar"  class="photo"/>
+                        {{/if}}
+                        {{#if user.email}}
+                        <h3><a href="mailto:{{email}}" class="email">{{user.email}}</a></h3>
+                        {{/if}}
+                    
                     <div id="" class="">
                         <div class=" top-1">
                             <h2>Profile</h2>
@@ -45,17 +52,12 @@
                   
                 </div>
 
-                <div class="top-right">
+                
                     
-                        {{#if user.avatar_url}}
-                        <img src={{user.avatar_url}} alt="avatar" width="30%" class="photo"/>
-                        {{/if}}
-                        {{#if user.email}}
-                        <h3><a href="mailto:{{email}}" class="email">{{user.email}}</a></h3>
-                        {{/if}}
+                        
                     
 
-                </div>
+            </div>
             </div>
 
         </header>
@@ -67,7 +69,7 @@
                         </div>
                         <div class="top-1" id="">
 
-                            <ul class="">
+                            <ul class="lang-list">
                                 {{#each languages}}
                                 <li><h2>{{this.name}}</h2></li>
                                 {{/each}}
@@ -152,7 +154,7 @@
 
         </article>
         <footer style="text-align: center; align-items:center">
-            <p class="r-heading">{{user.name}} &mdash; {{#if email}}<a href="mailto:{{user.email}}">{{user.email}}</a> &mdash; {{/if}}
+            <p class="r-footer">{{user.name}} &mdash; {{#if email}}<a href="mailto:{{user.email}}">{{user.email}}</a> &mdash; {{/if}}
                 {{#if website}}<a href="{{website}}" title="{{user.name}}'s website">{{website}}</a> &mdash; {{/if}} <a
                     href="https://github.com/{{user.username}}" title="GitHub profile"
                     class="url">https://github.com/{{user.username}}</a></p>
