@@ -7,9 +7,11 @@ body{
     background: #1e1e26;
     color: #fff
 }
+.title-name {
+    text-align: center;
+    margin-top: 10px;
+}
 .r-main{
-    margin-left: 150px;
-    margin-right: 150px;
     margin-top:3%;
 }
 
@@ -26,21 +28,24 @@ body{
     display: flex;
     align-items: center;
 }
+.r-navbar-2{
+    margin-left: 15%;
+}
 .r-logo{
-    width: 150px;
+    width: 80px;
     margin: 30px 0;
 }
 .r-btn{
     color: #1e1e26;
-      border: 0;
-      width: 10vw;
-      height: 5vh;
-      font-family: helvetica;
-      font-size: 14px;
-      border-radius: 40px;
-      background: white;
-      margin-left: 70%;
-      cursor: pointer;
+    border: 0;
+    width: 22vw;
+    height: 3vh;
+    font-family: helvetica;
+    font-size: 9px;
+    border-radius: 40px;
+    background: white;
+    margin-left: 0;
+    cursor: pointer;
   }
   
 .r-btn:hover{
@@ -52,7 +57,7 @@ body{
 
 
 .top-left{
-    width:50%;
+    width:100%;
     float: left;
     font-size: 18px;
 }
@@ -66,7 +71,37 @@ body{
 .top-1{
     margin-top: 3%;
 }
-.r-repo{
-    
+.top-2{
     float: left;
+    width: 100%;
+}
+.r-repo{
+    width: 100%;
+    float: left;
+}
+.r-contributions{
+    float: left;
+    width: 100%;
+}
+.r-organisation{
+    float: left;
+    width: 100%;
+}
+footer{
+    float: left;
+}
+
+.photo{
+    width: 100%;
+}
+
+.r-heading{
+    font-size: 2em;
+    margin-top: 20px;
+}
+.lang-list{
+    font-size: 0.9em;
+}
+.r-footer{
+    font-size: 1.2em;
 }
