@@ -61,7 +61,7 @@ npm run start
 
 
 ## Contributors
-[Muhammed Hashir](https://github.com/hashirpm) | [Mohammed Shiyas](https://github.com/shiyasmohd) | [Abdul Adhil PK](https://github.com/adhilcodes)
+[Muhammed Hashir](https://github.com/hashirpm) | [Shiyas Mohammed](https://github.com/shiyasmohd) | [Abdul Adhil PK](https://github.com/adhilcodes)
 
 <a>
 	<img src="https://contrib.rocks/image?repo=hashirpm/github-resume" />
