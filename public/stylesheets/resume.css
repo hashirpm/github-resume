@@ -93,15 +93,24 @@ footer{
 
 .photo{
     width: 100%;
+    border-radius: 50%;
 }
 
 .r-heading{
-    font-size: 2em;
+    font-size: 26px;
     margin-top: 20px;
 }
 .lang-list{
-    font-size: 0.9em;
+    font-size: 10px;
 }
 .r-footer{
-    font-size: 1.2em;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+.r-content-list{
+    font-size:10px;
+}
+.user-d{
+    font-size:15px
 }
