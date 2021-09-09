@@ -29,7 +29,8 @@ body{
     align-items: center;
 }
 .r-navbar-2{
-    margin-left: 15%;
+    margin-left: auto;
+    margin-right: 0;
 }
 .r-logo{
     width: 80px;
@@ -89,6 +90,7 @@ body{
 }
 footer{
     float: left;
+    width: 100%;
 }
 
 .photo{
@@ -99,7 +101,6 @@ footer{
 .r-heading{
     font-size: 26px;
     margin-top: 20px;
-    margin-bottom: 5px;
 }
 .lang-list{
     font-size: 10px;
@@ -114,4 +115,62 @@ footer{
 }
 .user-d{
     font-size:15px
+}
+
+/* -------------------------------------- */
+
+@media only screen and (min-width: 768px)
+{
+    .photo{
+        width: 25%;
+    }
+
+    .user-d{
+        font-size: 19px;
+    }
+
+    .r-logo{
+        width:120px;
+    }
+
+    .r-btn{
+        width: 15vw;
+    }
+
+    .r-content-list{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 1000px)
+{
+    .photo{
+        width: 25%;
+    }
+
+    .user-d{
+        font-size: 19px;
+    }
+
+    .r-logo{
+        width:200px;
+    }
+
+    .r-btn{
+        width: 11vw;
+        height: 2.5vw;
+        font-size: 14px;
+    }
+
+    .r-content-list{
+        font-size: 12px;
+    }
+
+    .r-main{
+        width: 50%;
+        min-height: 100vh;
+        margin: 0 auto;
+    }
+    
+    
 }
