@@ -5,10 +5,13 @@
 </h1>
 <div align="center">
   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/hashirpm/github-resume/graphs/contributors)  [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/hashirpm/github-resume/wiki) [![GitHub tag](https://img.shields.io/github/tag/guilhermeborgesbastos/live-resume.svg)](https://github.com/hashirpm/github-resume/tags/)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/hashirpm/github-resume/graphs/contributors)  [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/hashirpm/github-resume/wiki) [![GitHub tag](https://img.shields.io/github/tag/guilhermeborgesbastos/live-resume.svg)](https://github.com/hashirpm/github-resume/tags/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)  [![GitHub forks](https://img.shields.io/github/forks/hashirpm/github-resume.svg?style=social&label=Fork&maxAge=259100)](https://github.com/hashirpm/github-resume/network/) [![GitHub stars](https://img.shields.io/github/stars/hashirpm/github-resume.svg?style=social&label=Star&maxAge=259100)](https://github.com/hashirpm/github-resume/stargazers/)
-
+![Issues](https://img.shields.io/github/issues/hashirpm/github-resume)
+![Pull Requests](https://img.shields.io/github/issues-pr/hashirpm/github-resume?)
+![Forks](https://img.shields.io/github/forks/hashirpm/github-resume)
+![Stars](https://img.shields.io/github/stars/hashirpm/github-resume)
+![License](https://img.shields.io/github/license/hashirpm/github-resume)
 </div>
 </div>
 
@@ -56,16 +59,19 @@ npm run start
 ## 🖋 Contribute
 	
 > Please, feel free to make **pull request** if you have any improvements or any sort of changes.Your contribution is always welcome!
+
+**Don't know How to Contribute, head over to the [docs](https://github.com/hashirpm/github-resume/tree/main/docs/contribute)**
 	
 	
 
 
 ## Contributors
-[Muhammed Hashir](https://github.com/hashirpm) | [Shiyas Mohammed](https://github.com/shiyasmohd) | [Abdul Adhil PK](https://github.com/adhilcodes)
-
-<a>
-	<img src="https://contrib.rocks/image?repo=hashirpm/github-resume" />
-</a>
+	
+SR No | Author  
+--- | ---
+1 | [Muhammed Hashir](https://github.com/hashirpm)
+2 | [Shiyas Mohammed](https://github.com/shiyasmohd)
+3 | [Abdul Adhil PK](https://github.com/adhilcodes)
 
 <p align="center">
 	Made with :heart: by xDev
