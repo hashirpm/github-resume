@@ -26,7 +26,7 @@
 
 ![](./docs/resume_demo.png)
 	
-See the demo of [GitHub Resume](https://gresume.herokuapp.com/)
+See the demo of [GitHub Resume](https://github-resume.up.railway.app/)
 
 
 ## What technologies used❓
